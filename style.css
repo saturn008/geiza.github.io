@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    background-image: url(img1.png.jpeg);
+    background-color: #838385;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@media screen and (max-width: 568px) {
+    body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+
+.logo {
+    width: auto;
+}
+
+.cabeca-menu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav {
+    background-color: transparent;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    scroll-behavior: smooth;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: green;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.conteudo {
+    margin-bottom: 225px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 568px) {
+    .inicio .conteudo-escrito {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20vw;
+    color: white;
+}
+
+.subtitulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: white;
+}
+
+.sobre {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, #838385, rgb(189, 189, 189));
+}
+
+.sobre .container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 568px) {
+    .sobre .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.sobre .contect {
+    width: 100%;
+    max-width: 480px;
+}
+
+.sobre img {
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+.sobre img:hover {
+    transform: scale(1.1);
+}
+
+.sobre p {
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.roupas {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, rgb(189, 189, 189), rgb(235, 235, 235));
+}
+
+.roupas .container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.roupas .card {
+    max-width: 100%;
+}
+
+.roupas img {
+    flex-grow: 1;
+    transition: 0.3s transform;
+}
+
+.roupas img:hover {
+    transform: scale(1.1);
+}
+
+.roupas .card:last-child {
+    margin-right: 0;
+}
+
+.roupas h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.mais {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, rgb(235, 235, 235), white);
+}
+
+.mais .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 568px) {
+    .mais .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.mais img {
+    display: flex;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: white;
+    align-items: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociais img {
+    width: 50px;
+    height: 50px;
+}
